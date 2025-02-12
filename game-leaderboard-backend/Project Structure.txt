@@ -1,0 +1,22 @@
+game-leaderboard-backend/
+├── config/
+│   └── db.js
+├── controllers/
+│   ├── contestantController.js
+│   ├── gameController.js
+│   ├── scoreController.js
+│   └── leaderboardController.js
+├── models/
+│   ├── Contestant.js
+│   ├── Game.js
+│   └── Score.js
+├── routes/
+│   ├── contestantRoutes.js
+│   ├── gameRoutes.js
+│   ├── scoreRoutes.js
+│   └── leaderboardRoutes.js
+├── utils/
+│   └── popularityScore.js
+├── app.js
+├── server.js
+└── package.json
