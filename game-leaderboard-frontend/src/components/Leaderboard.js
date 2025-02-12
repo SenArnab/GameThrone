@@ -17,17 +17,15 @@ const Leaderboard = () => {
     }, []);
 
     return (
-        <div className="card">
-            <div className="card-body">
-                <h5 className="card-title">Global Leaderboard</h5>
-                <ul className="list-group">
-                    {leaderboard.map((entry) => (
-                        <li key={entry._id} className="list-group-item">
-                            Contestant: {entry._id}, Score: {entry.totalScore}
-                        </li>
-                    ))}
-                </ul>
-            </div>
+        <div>
+            <h3>Global Leaderboard</h3>
+            <ul>
+                {leaderboard.map((entry, index) => (
+                    <li key={index}>
+                        Contestant: {entry.contestantName}, Score: {entry.totalScore}
+                    </li>
+                ))}
+            </ul>
         </div>
     );
 };

@@ -20,8 +20,10 @@ const DateLeaderboard = ({ date }) => {
         <div>
             <h3>Date Leaderboard</h3>
             <ul>
-                {leaderboard.map((entry) => (
-                    <li key={entry._id}>Contestant: {entry._id}, Score: {entry.totalScore}</li>
+                {leaderboard.map((entry, index) => (
+                    <li key={index}>
+                        Contestant: {entry.contestantName}, Score: {entry.totalScore}
+                    </li>
                 ))}
             </ul>
         </div>
